@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/medicine_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:layout_above="@+id/text_container"
+        android:layout_marginBottom="16dp"/>
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/empty_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty_message"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/> <!-- Initially hidden, will be shown if the list is empty -->
+
+        <Button
+            android:id="@+id/add_medicine_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/plus_sign"
+            android:contentDescription="@string/add_medicine"
+            android:elevation="4dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+    </RelativeLayout>
+
+</RelativeLayout>

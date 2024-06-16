@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PillMate</string>
+    <string name="save">SAVE</string>
+    <string name="add_medicine">Add Medicine</string>
+    <string name="empty_message">Press the plus button to add medicines!</string>
+    <string name="title_add_medicine">Add your medicines here</string>
+    <string name="hint_medicine_name">Type the name of the medicine here</string>
+    <string name="hint_quantity">Type quantity</string>
+    <string name="medicine">Medicine name</string>
+    <string name="type_medicine">Type name of medicine.</string>
+    <string name="dosage_type">Dosage Form</string>
+    <string name="quantities">Quantity</string>
+    <string name="type_quantity">Type quantity</string>
+    <string name="frequency">How often do you take it?</string>
+    <string name="what_time">What time?</string>
+    <string-array name="dosage_forms_array">
+        <item>Tablets</item>
+        <item>Injections</item>
+        <item>Single Containers</item>
+    </string-array>
+    <string name="dosage_format">%1$s - %2$d units</string>
+</resources>
