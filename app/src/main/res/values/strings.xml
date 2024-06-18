@@ -13,10 +13,14 @@
     <string name="type_quantity">Type quantity</string>
     <string name="frequency">How often do you take it?</string>
     <string name="what_time">What time?</string>
+    <string name="dosage_format">%1$s - %2$d units</string>
+    <string name="medicine_quantity_format">Quantity: %1$d</string>
+    <string name="medicine_frequency_format">Frequency: %1$s</string>
+    <string name="medicine_time_format">Time: %1$s</string>
     <string-array name="dosage_forms_array">
-        <item>Tablets</item>
+        <item>Tablets (click for more options)</item>
         <item>Injections</item>
         <item>Single Containers</item>
     </string-array>
-    <string name="dosage_format">%1$s - %2$d units</string>
 </resources>
+

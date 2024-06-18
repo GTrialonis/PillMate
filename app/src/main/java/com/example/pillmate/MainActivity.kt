@@ -14,6 +14,8 @@ import com.example.pillmate.ui.theme.MedicineAdapter
 class MainActivity : AppCompatActivity() {
 
     private lateinit var dbHelper: DatabaseHelper
+    private lateinit var medicineListView: ListView
+    private lateinit var emptyMessage: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,9 +31,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val medicineListView = findViewById<ListView>(R.id.medicine_list_view)
-        val emptyMessage = findViewById<TextView>(R.id.empty_message)
+        medicineListView = findViewById(R.id.medicine_list_view)
+        emptyMessage = findViewById(R.id.empty_message)
 
+        loadMedicines()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        loadMedicines()
+    }
+
+    private fun loadMedicines() {
         val medicines = dbHelper.getAllMedicines()
         Log.d("MainActivity", "Retrieved medicines: $medicines")
 
