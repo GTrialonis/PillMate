@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.theme.AddMedicineActivity"/>
+        <activity android:name=".PrescriptionActivity"/>
     </application>
 
 </manifest>

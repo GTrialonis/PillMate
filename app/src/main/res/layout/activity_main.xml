@@ -3,15 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image_with_opacity"
+    android:background="@drawable/background_image"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/empty_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/empty_message"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"/>
 
     <ListView
         android:id="@+id/medicine_list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:dividerHeight="1dp"
-        android:layout_above="@+id/text_container"
+        android:layout_below="@id/empty_message"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"/>
 
     <RelativeLayout
@@ -21,17 +34,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp">
-
-        <TextView
-            android:id="@+id/empty_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="@string/empty_message"
-            android:textSize="18sp"
-            android:textColor="@color/purple_700"
-            android:layout_marginBottom="16dp"
-            android:visibility="gone"/> <!-- Initially hidden, will be shown if the list is empty -->
 
         <Button
             android:id="@+id/add_medicine_button"
@@ -43,6 +45,17 @@
             android:contentDescription="@string/add_medicine"
             android:elevation="4dp"
             android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+        <Button
+            android:id="@+id/view_prescription_button"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_medicine_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="#0D2437"
+            android:text="@string/view_your_prescription"
+            android:textColor="@color/white" />
     </RelativeLayout>
 
 </RelativeLayout>

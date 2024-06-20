@@ -17,8 +17,9 @@
     <string name="medicine_quantity_format">Quantity: %1$d</string>
     <string name="medicine_frequency_format">Frequency: %1$s</string>
     <string name="medicine_time_format">Time: %1$s</string>
+    <string name="view_your_prescription">View your prescription</string>
     <string-array name="dosage_forms_array">
-        <item>Tablets (click for more options)</item>
+        <item>Tablets</item>
         <item>Injections</item>
         <item>Single Containers</item>
     </string-array>

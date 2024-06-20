@@ -12,5 +12,6 @@
     <color name="hint_text_color">#00BCD4</color> <!-- Darker Gray for better contrast -->
     <color name="button_background">#303F9F</color> <!-- Holo Blue Dark -->
     <color name="field">#34475153</color>
+    <color name="red">#FFE91E63</color>
 
 </resources>
