@@ -6,11 +6,10 @@
     android:background="@drawable/new_background"
     tools:context=".PrescriptionActivity">
 
-<ListView
-android:id="@+id/medicine_list_view"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:dividerHeight="1dp"
-android:layout_margin="16dp"/>
-
+    <ListView
+        android:id="@+id/medicine_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:layout_margin="16dp"/>
 </RelativeLayout>

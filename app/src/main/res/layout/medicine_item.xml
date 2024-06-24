@@ -10,30 +10,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
 
     <TextView
         android:id="@+id/medicine_dosage_form_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:textColor="@color/light_blue"/>
 
     <TextView
         android:id="@+id/medicine_quantity_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:textColor="#C6E5A3"/>
 
     <TextView
         android:id="@+id/medicine_frequency_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:textColor="#FFEB3B"/>
 
     <TextView
         android:id="@+id/medicine_time_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:textColor="#F4BDAC"
+        />
 
 </LinearLayout>
